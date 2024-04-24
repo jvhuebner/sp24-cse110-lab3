@@ -96,3 +96,10 @@
     nav ul li a {
         color: var(--secondary-color, #009933); /* Fallback to green */
     }
+
+/*Text Styling*/
+    #misc p {
+        color: #333; /* Setting text color to dark gray */
+        text-decoration: underline; /* Adding underline */
+        text-align: left; /* Aligning text to the center */
+    }
