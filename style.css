@@ -138,3 +138,18 @@
     #video video:active {
         border: 10px solid blue; /* Add a blue border when video is active */
     }
+
+/*Layouts*/
+    #feedback {
+        display: flex; /* Apply flex to the container */
+        flex-direction: column; /* Arrange children vertically */
+        align-items: center; /* Center children horizontally */
+        gap: 10px; /* Space between children */
+    }
+
+    /* Grid layout */
+    .important-note {
+        display: grid; /* Apply grid to the container */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+        gap: 20px; /* Space between grid items */
+    }
