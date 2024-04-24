@@ -7,9 +7,14 @@ assignees: ''
 
 ---
 
-#Standup Meeting Notes
+# Standup Meeting Notes
 
-##Meeting Occurred on Apr 23 2024
+## Meeting Occurred on Apr 23 2024
 
 ### Attendees:
 - me
+
+### Agenda
+- add CSS styles
+- add CSS selectors
+- validate pages
