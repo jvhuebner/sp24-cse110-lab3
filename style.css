@@ -27,7 +27,7 @@
     }
     /* Color Mix */
     #feedback input[type="submit"] {
-        color: color-mix(in lch, plum, pink); /* Mix of yellow and black with multiplication */
+        background-color: color-mix(in srgb, #34c9eb 25%, white); /* Mix of yellow and black with multiplication */
     }
 
 /* Relative and Absolute Units */
