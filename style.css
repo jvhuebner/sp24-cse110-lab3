@@ -31,18 +31,53 @@
     }
 
 /* Relative and Absolute Units */
-hr {
-    margin: 20px; /* Absolute unit (pixels) for margin */
-    border: 2px solid black; /* Absolute unit (pixels) for border thickness */
-    min-width: 200px; /* Absolute unit (pixels) for minimum width */
-}
+    hr {
+        margin: 20px; /* Absolute unit (pixels) for margin */
+        border: 2px solid black; /* Absolute unit (pixels) for border thickness */
+        min-width: 200px; /* Absolute unit (pixels) for minimum width */
+    }
 
-h2 {
-    font-size: 2em; /* Relative unit (em) for font size */
-}
+    h2 {
+        font-size: 2em; /* Relative unit (em) for font size */
+    }
 
-img {
-    max-width: 100%; /* Relative unit (%) for maximum width */
-    width: 30vw; /* Relative unit (viewport width) */
-    height: 30vh; /* Relative unit (viewport height) */
-}
+    img {
+        max-width: 100%; /* Relative unit (%) for maximum width */
+        width: 30vw; /* Relative unit (viewport width) */
+        height: 30vh; /* Relative unit (viewport height) */
+    }
+
+/*Box Model*/
+    /* Margin */
+    /* Longhand */
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Shorthand */
+    section {
+        margin: 10px 20px 30px 20px;
+    }
+
+    /* Padding */
+    /* Longhand */
+    section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* Shorthand */
+    figure {
+        padding: 10px 20px;
+    }
+
+    /* Borders */
+    hr {
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        border-radius: 5px;
+    }
