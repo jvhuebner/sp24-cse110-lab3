@@ -1,5 +1,5 @@
-# Lab 2 - Starter
+# Lab 3 - sp24-cse110-lab3
 
 
-[https://jvhuebner.github.io/Lab2_Starter/](https://jvhuebner.github.io/Lab2_Starter/)
+[https://jvhuebner.github.io/sp24-cse110-lab3/](https://jvhuebner.github.io/sp24-cse110-lab3/)
 
