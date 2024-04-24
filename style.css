@@ -23,11 +23,11 @@
 
     /* Wider-gamut Color */
     #visuals figcaption {
-        color: color(srgb 255 0 255 / 0.5); /* Magenta with 50% opacity */
+        color: rgb( 255 0 255 / 0.5); /* Magenta with 50% opacity */
     }
     /* Color Mix */
     #feedback input[type="submit"] {
-        background-color: color-mix(multiply, yellow 30%, black); /* Mix of yellow and black with multiplication */
+        background-color: color-mix(multiply, yellow 30%, black 70%); /* Mix of yellow and black with multiplication */
     }
 
 /* Relative and Absolute Units */
