@@ -103,3 +103,16 @@
         text-decoration: underline; /* Adding underline */
         text-align: left; /* Aligning text to the center */
     }
+
+/*Display*/
+    #misc p {
+        display: block; /* Set display to block */
+        background-color: #f0f0f0; /* Just for visual clarity */
+        padding: 10px; /* Just for visual clarity */
+    }
+
+    #audio {
+        display: inline-block; /* Set display to inline-block */
+        background-color: #f0f0f0; /* Just for visual clarity */
+        padding: 10px; /* Just for visual clarity */
+    }
