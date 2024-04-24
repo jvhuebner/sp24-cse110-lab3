@@ -81,3 +81,18 @@
         border-width: 2px;
         border-radius: 5px;
     }
+
+/*Variables and Fallbacks*/
+    :root {
+        --primary-color: #0066cc; /* Default color */
+        --secondary-color: #d112e7; /* Default color */
+    }
+
+    /* Use CSS variables with fallbacks */
+    body {
+        color: var(--primary-color, #333); /* Fallback to dark gray */
+    }
+
+    nav ul li a {
+        color: var(--secondary-color, #009933); /* Fallback to green */
+    }
