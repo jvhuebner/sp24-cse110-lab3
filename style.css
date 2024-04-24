@@ -129,3 +129,12 @@
         background-color: #f0f0f0; /* Just for visual clarity */
         padding: 10px; /* Just for visual clarity */
     }
+
+/*PseudoClass*/
+    #misc a:hover {
+        color: red; /* Change text color to red when hovered */
+    }
+
+    #video video:active {
+        border: 10px solid blue; /* Add a blue border when video is active */
+    }
