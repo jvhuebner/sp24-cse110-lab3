@@ -153,3 +153,22 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
         gap: 20px; /* Space between grid items */
     }
+
+/*Responsiveness*/
+    @media screen and (max-width: 768px) {
+        #feedback {
+            flex-direction: column; /* Change to column layout on smaller screens */
+        }
+
+        .important-note {
+            grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        }
+    }
+
+/*Fonts */
+    body {
+        font-family: 'Roboto', sans-serif; /* Apply Roboto font to the entire document */
+    }
+    h1, h2, h3 {
+        font-weight: 700; /* Set font weight to bold for headings */
+    }
