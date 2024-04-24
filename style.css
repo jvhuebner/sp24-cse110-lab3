@@ -116,3 +116,16 @@
         background-color: #f0f0f0; /* Just for visual clarity */
         padding: 10px; /* Just for visual clarity */
     }
+
+/*Positioning*/
+    #misc {
+        position: relative; /* Set position to relative */
+    }
+
+    #visuals {
+        position: fixed; /* Set position to fixed */
+        top: 20px; /* Fixed position from top */
+        right: 20px; /* Fixed position from right */
+        background-color: #f0f0f0; /* Just for visual clarity */
+        padding: 10px; /* Just for visual clarity */
+    }
