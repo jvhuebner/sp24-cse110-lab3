@@ -1,0 +1,31 @@
+/* Colors General */
+    /* RGB / RGBA */
+
+    body {
+        color: rgba(0, 0, 255, 0.7); /* Red with 70% opacity */
+    }
+
+    /* Hex Codes */
+    h1 {
+        color: #FFA500; /* Orange */
+    }
+
+    /* HSL / HSLA */
+    nav ul li a {
+        color: hsla(120, 100%, 50%, 0.8); /* Green with 80% opacity */
+    }
+
+    /* Background */
+    /* Color Names */
+    .important-note {
+        background-color: red; /* Red */
+    }
+
+    /* Wider-gamut Color */
+    #visuals figcaption {
+        color: color(srgb 255 0 255 / 0.5); /* Magenta with 50% opacity */
+    }
+    /* Color Mix */
+    #feedback input[type="submit"] {
+        background-color: color-mix(multiply, yellow 30%, black); /* Mix of yellow and black with multiplication */
+    }
