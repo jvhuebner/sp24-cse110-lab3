@@ -29,3 +29,209 @@
     #feedback input[type="submit"] {
         background-color: color-mix(multiply, yellow 30%, black); /* Mix of yellow and black with multiplication */
     }
+
+/* Relative and Absolute Units */
+    hr {
+        margin: 20px; /* Absolute unit (pixels) for margin */
+        border: 2px solid black; /* Absolute unit (pixels) for border thickness */
+        min-width: 200px; /* Absolute unit (pixels) for minimum width */
+    }
+
+    h2 {
+        font-size: 2em; /* Relative unit (em) for font size */
+    }
+
+    img {
+        max-width: 100%; /* Relative unit (%) for maximum width */
+        width: 30vw; /* Relative unit (viewport width) */
+        height: 30vh; /* Relative unit (viewport height) */
+    }
+
+/*Box Model*/
+    /* Margin */
+    /* Longhand */
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Shorthand */
+    section {
+        margin: 10px 20px 30px 20px;
+    }
+
+    /* Padding */
+    /* Longhand */
+    section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* Shorthand */
+    /*Element Selector*/
+    figure {
+        padding: 10px 20px;
+    }
+
+    /* Borders */
+    hr {
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        border-radius: 5px;
+    }
+
+/*Variables and Fallbacks*/
+    :root {
+        --primary-color: #0066cc; /* Default color */
+        --secondary-color: #d112e7; /* Default color */
+    }
+
+    /* Use CSS variables with fallbacks */
+    body {
+        color: var(--primary-color, #333); /* Fallback to dark gray */
+    }
+
+    nav ul li a {
+        color: var(--secondary-color, #009933); /* Fallback to green */
+    }
+
+/*Text Styling*/
+    #misc p {
+        color: #333; /* Setting text color to dark gray */
+        text-decoration: underline; /* Adding underline */
+        text-align: left; /* Aligning text to the center */
+    }
+
+/*Display*/
+    #misc p {
+        display: block; /* Set display to block */
+        background-color: #f0f0f0; /* Just for visual clarity */
+        padding: 10px; /* Just for visual clarity */
+    }
+
+    #audio {
+        display: inline-block; /* Set display to inline-block */
+        background-color: #f0f0f0; /* Just for visual clarity */
+        padding: 10px; /* Just for visual clarity */
+    }
+
+/*Positioning*/
+    #misc {
+        position: relative; /* Set position to relative */
+    }
+
+    #visuals {
+        position: fixed; /* Set position to fixed */
+        top: 20px; /* Fixed position from top */
+        right: 20px; /* Fixed position from right */
+        background-color: #f0f0f0; /* Just for visual clarity */
+        padding: 10px; /* Just for visual clarity */
+    }
+
+/*PseudoClass*/
+    #misc a:hover {
+        color: red; /* Change text color to red when hovered */
+    }
+
+    #video video:active {
+        border: 10px solid blue; /* Add a blue border when video is active */
+    }
+
+/*Layouts*/
+    /*ID Selector*/
+    #feedback {
+        display: flex; /* Apply flex to the container */
+        flex-direction: column; /* Arrange children vertically */
+        align-items: center; /* Center children horizontally */
+        gap: 10px; /* Space between children */
+    }
+
+    /* Grid layout */
+    .important-note {
+        display: grid; /* Apply grid to the container */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+        gap: 20px; /* Space between grid items */
+    }
+
+/*Responsiveness*/
+    @media screen and (max-width: 768px) {
+        #feedback {
+            flex-direction: column; /* Change to column layout on smaller screens */
+        }
+
+        /*Class Selector*/
+        .important-note {
+            grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        }
+    }
+
+/*Fonts */
+    body {
+        font-family: 'Roboto', sans-serif; /* Apply Roboto font to the entire document */
+    }
+    /*Selector List*/
+    h1, h2, h3 {
+        font-weight: 700; /* Set font weight to bold for headings */
+    }
+
+/*Universal Selector*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/*Attribute Selector*/
+    input[type="text"] {
+        border: 1px solid #ccc;
+        padding: 5px;
+        /* Add more styles as needed */
+    }
+/*Psuedoclass selector*/
+    a:hover {
+        color: #ff0000; /* Change text color to red when hovered */
+        text-decoration: underline; /* Add underline when hovered */
+    }
+
+/*Combinators*/
+    /* Descendant Combinator */
+    section #misc {
+        background-color: #f0f0f0; /* Just for visual clarity */
+    }
+
+    /* Child Combinator */
+    section > form {
+        border: 2px solid #ccc; /* Just for visual clarity */
+    }
+
+    /* General Sibling Combinator */
+    hr ~ section {
+        margin-top: 20px; /* Add margin to sections following a <hr> */
+    }
+
+    /* Adjacent Sibling Combinator */
+    h2 + p {
+        font-style: italic; /* Italicize paragraphs following an <h2> */
+    }
+
+    /* Combining Two Selectors */
+    h2.important-note {
+        color: #ff0000; /* Red color for h2 with class 'important-note' */
+    }
+
+/*New Selectors*/
+    /* Pseudo-class Selector :has() */
+    section:has(figure) {
+        background-color: #f0f0f0; /* Apply background color to sections containing <figure> elements */
+    }
+
+    /* Nested Selector */
+    #feedback input[type="submit"] {
+        color: white; /* Change text color of submit button */
+    }
+
+    #feedback input[type="submit"]:hover {
+        background-color: #007bff; /* Change background color of submit button on hover */
+    }
